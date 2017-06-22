@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="settings.js"></script>
+        <style type="text/css">
+            body {
+                width:300px;
+                padding:5px;
+                font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+                color: #16161D;
+            }
+            img#icon {width: 40px; height: 40px;}
+            #username {font-weight: bold;}
+            #knownUser, #tokenHolder{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            hr {
+                border-top: 1px dotted #8c8b8b;
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        <b>Registered token :</b>
+        <div id="knownUser">
+            <img id="icon" src="assets/loader.svg"/>
+            <div id="info">
+                <div id="username">...</div>
+                <div id="login">...</div>
+            </div>
+        </div>
+        <hr/>
+        <div id="tokenHolder">
+            <input type="password" id="token" placeholder="Token">
+            <button id="submit">Save</button>
+        </div>
+    </body>
+</html>
